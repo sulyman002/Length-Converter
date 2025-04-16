@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="calc-container" id="converter">
+        <p>Length Converter</p>
+        <p><span>Enter the lenght</span> <span>Enter the lenght,</span> <span>select units</span>, and convert</p>
+        <div class="input-container">
+            <input type="number" placeholder="0.00" id="input-value">
+            <select id="fromUnit">
+                <option value="Kilometers">Kilometers</option>
+                <option value="Miles">Miles</option>
+                <option value="Meters">Meters</option>
+                <option value="Feet">Feet</option>
+                <option value="Inches">Inches</option>
+            </select>
+
+            <select id="toUnit">
+                <option value="Inches">Inches</option>
+                <option value="Feet">Feet</option>
+                <option value="Meters">Meters</option>
+                <option value="Miles">Miles</option>
+                <option value="Kilometers">Kilometers</option>
+            </select>
+            <button onclick="convert()">Convert</button>
+        </div>
+        <!-- <div id="">
+            <input type="text" id="result-box">
+        </div> -->
+
+    </div>
+
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

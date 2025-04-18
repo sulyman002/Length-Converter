@@ -5,8 +5,8 @@
 }
 
 :root {
-    --fs-900: clamp(1.5rem, 4vh, 2rem);
-    --fs-400: 1rem;
+    --fs-900: clamp(1.5rem, 4vw, 2rem);
+    --fs-400: clamp(0.8rem, 3vw, 1.2rem);
     --fs-600: 1.5rem;
     --bg-color: #000;
 
@@ -15,7 +15,7 @@
 }
 
 body {
-    min-width: 100vw;
+    min-width: auto;
     min-height: 100vh;
     background-color: #1b1818;
     display: flex;
@@ -26,17 +26,19 @@ body {
 
 .calc-container {
     display: flex;
-    min-width: 40vw;
-    min-height: 45vh;
+    min-height: auto;
+    min-width: 350px;
     flex-direction: column;
     align-items: center;
     background-color: rgb(36, 28, 28);
-    box-shadow: 9px 9px 7px -7px rgba(19, 18, 18, 0.849);
+    box-shadow: 0px 9px px -7px rgba(126, 95, 95, 0.849);
     border-radius: 15px;
-    padding: 25px;
+    padding: 30px;
+    
 }
 
 .calc-container p:first-child {
+
     color: rgb(140, 59, 216);
     font-size: var(--fs-900);
     font-weight: 800;
@@ -53,7 +55,7 @@ body {
 
 span {
 
-    flex-wrap: row nowrap;
+    flex-wrap: row wrap;
 }
 
 .input-container {
@@ -64,7 +66,7 @@ span {
 
 #input-value {
     padding: var(--padding);
-    min-width: 400px;
+    min-width: clamp(200px, 50vw, 400px);
     border: 0px;
     border-radius: 5px;
     margin-top: 10px;
@@ -103,9 +105,10 @@ button:focus {
 
 .input-result {
     padding: var(--padding-xl);
-    min-width: 400px;
-    height: 70px;
-    flex-flow: row wrap;
+    min-width: clamp(200px, 50vw, 400px);
+    /* height: 70px; */
+    display: flex;
+    flex-flow: wrap;
     font-weight: bolder;
     border: 0px;
     border-radius: 5px;
@@ -114,4 +117,8 @@ button:focus {
     color: #fff;
     background-color: rgba(51, 49, 49, 0.918);
     text-align: center;
+}
+
+@media screen and (min-width: ) {
+    
 }

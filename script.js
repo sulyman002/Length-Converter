@@ -60,14 +60,14 @@ function convert() {
     // Create new result input and container
     const container = document.querySelector('.calc-container');
     const resultContainer = document.createElement('div');
-    const resultInput = document.createElement('input');
+    const resulttextarea = document.createElement('textarea');
 
-    resultInput.type = 'text';
-    resultInput.id = 'result-box';
-    resultInput.className = 'input-result';
-    resultInput.readOnly = true;
-    resultInput.value = `${inputValue} ${fromUnit} is ${result.toFixed(2)} ${toUnit}`;
+    resulttextarea.type = 'text';
+    resulttextarea.id = 'result-box';
+    resulttextarea.className = 'input-result';
+    resulttextarea.readOnly = true;
+    resulttextarea.value = `${inputValue} ${fromUnit} is ${result.toFixed(2)} ${toUnit}`;
 
-    resultContainer.appendChild(resultInput);
+    resultContainer.appendChild(resulttextarea);
     container.appendChild(resultContainer);
 }
